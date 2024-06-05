@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.jumbotron {
+    background: url('../images/yogyakarta.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
