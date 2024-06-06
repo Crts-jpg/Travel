@@ -6,25 +6,25 @@
     <title>Paket Detail</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script>
-        function calculateTotalPrice() {
-            const servicePrices = {
+        function calculatehargaTotal() {
+            const hargaService = {
                 'penginapan': 1000000,
                 'transportasi': 1200000,
                 'makanan': 500000
             };
 
             let selectedServices = document.querySelectorAll('input[name="services[]"]:checked');
-            let totalServicePrice = 0;
+            let totalHargaServis = 0;
             selectedServices.forEach(service => {
-                totalServicePrice += servicePrices[service.value];
+                totalHargaServis += hargaService[service.value];
             });
 
             const days = parseInt(document.getElementById('days').value) || 0;
             const participants = parseInt(document.getElementById('participants').value) || 0;
 
-            const totalPrice = days * participants * totalServicePrice;
+            const hargaTotal = days * participants * totalHargaServis;
 
-            document.getElementById('totalPrice').value = 'Rp ' + totalPrice.toLocaleString('id-ID');
+            document.getElementById('hargaTotal').value = 'Rp ' + hargaTotal.toLocaleString('id-ID');
         }
     </script>
 </head>
@@ -63,30 +63,30 @@
         </div>
         <div class="form-group">
             <label for="days">Jumlah Hari</label>
-            <input type="number" class="form-control" id="days" name="days" required oninput="calculateTotalPrice()">
+            <input type="number" class="form-control" id="days" name="days" required oninput="calculatehargaTotal()">
         </div>
         <div class="form-group">
             <label for="participants">Jumlah Partisipan</label>
-            <input type="number" class="form-control" id="participants" name="participants" required oninput="calculateTotalPrice()">
+            <input type="number" class="form-control" id="participants" name="participants" required oninput="calculatehargaTotal()">
         </div>
         <div class="form-group">
             <label for="services">Services</label>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="services[]" id="service1" value="penginapan" onclick="calculateTotalPrice()">
+                <input class="form-check-input" type="checkbox" name="services[]" id="service1" value="penginapan" onclick="calculatehargaTotal()">
                 <label class="form-check-label" for="service1">Penginapan (Rp 1.000.000)</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="services[]" id="service2" value="transportasi" onclick="calculateTotalPrice()">
+                <input class="form-check-input" type="checkbox" name="services[]" id="service2" value="transportasi" onclick="calculatehargaTotal()">
                 <label class="form-check-label" for="service2">Transportasi (Rp 1.200.000)</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="services[]" id="service3" value="makanan" onclick="calculateTotalPrice()">
+                <input class="form-check-input" type="checkbox" name="services[]" id="service3" value="makanan" onclick="calculatehargaTotal()">
                 <label class="form-check-label" for="service3">Makanan (Rp 500.000)</label>
             </div>
         </div>
         <div class="form-group">
-            <label for="totalPrice">Total Price</label>
-            <input type="text" class="form-control" id="totalPrice" name="totalPrice" readonly>
+            <label for="hargaTotal">Harga Total</label>
+            <input type="text" class="form-control" id="hargaTotal" name="hargaTotal" readonly>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
