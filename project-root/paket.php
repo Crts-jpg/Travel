@@ -7,7 +7,7 @@
             <div class="card-body">
                 <h5 class="card-title">Borobudur</h5>
                 <p class="card-text">Rasakan keindahan dari candi Buddha terbesar di dunia.</p>
-                <a href="package_details.php?package=borobudur" class="btn btn-primary">Book Now</a>
+                <a href="paket_detail.php?package=borobudur" class="btn btn-primary">Book Now</a>
             </div>
         </div>
     </div>
@@ -17,7 +17,7 @@
             <div class="card-body">
                 <h5 class="card-title">Prambanan</h5>
                 <p class="card-text">Jelajahi kompleks candi Hindu yang megah.</p>
-                <a href="package_details.php?package=prambanan" class="btn btn-primary">Book Now</a>
+                <a href="paket_detail.php?package=prambanan" class="btn btn-primary">Book Now</a>
             </div>
         </div>
     </div>
@@ -27,7 +27,7 @@
             <div class="card-body">
                 <h5 class="card-title">Gunung Merapi</h5>
                 <p class="card-text">Petualangan menanti di salah satu gunung berapi paling aktif di Indonesia.</p>
-                <a href="package_details.php?package=merapi" class="btn btn-primary">Book Now</a>
+                <a href="paket_detail.php?package=merapi" class="btn btn-primary">Book Now</a>
             </div>
         </div>
     </div>

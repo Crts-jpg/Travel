@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $totalHarga = $_POST['totalPrice'];
 
     if (empty($name) || empty($email) || empty($tanggal) || empty($hari) || empty($partisipan) || empty($services)) {
-        echo "All fields must be filled out.";
+        echo "Semua form harus terisi untuk melanjutkan transaksi.";
         return;
     }
 
@@ -33,15 +33,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             break;
     }
 
-    // Convert totalPrice to a number for storage
     $totalHargaNumber = floatval(str_replace(',', '', str_replace('Rp ', '', $totalHarga)));
 
-    // Prepare and bind
     $stmt = $conn->prepare("INSERT INTO bookings (name, email, tanggal, hari, partisipan, total_harga, paket) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("sssiiis", $name, $email, $tanggal, $hari, $partisipan, $totalHargaNumber, $packageName);
 
     if ($stmt->execute()) {
-        // Store booking information in the session
         $_SESSION['booking'] = [
             'packageName' => $packageName,
             'name' => $name,
@@ -52,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             'totalHarga' => $totalHarga
         ];
 
-        header("Location: booking_summary.php");
+        header("Location: riwayat_booking.php");
         exit;
     } else {
         echo "Error: " . $stmt->error;

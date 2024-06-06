@@ -34,7 +34,7 @@ $booking = $_SESSION['booking'];
         <li>Total Harga: <?php echo htmlspecialchars($booking['totalHarga']); ?></li>
     </ul>
     <a href="index.php" class="btn btn-primary">Selesai</a>
-    <a href="packages.php" class="btn btn-primary">Pesan Lagi</a>
+    <a href="paket.php" class="btn btn-primary">Pesan Lagi</a>
 </div>
 
 <?php include 'layout/footer.php'; ?>
