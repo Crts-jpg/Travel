@@ -19,10 +19,10 @@
                 totalHargaServis += hargaService[service.value];
             });
 
-            const days = parseInt(document.getElementById('days').value) || 0;
+            const hari = parseInt(document.getElementById('hari').value) || 0;
             const participants = parseInt(document.getElementById('participants').value) || 0;
 
-            const hargaTotal = days * participants * totalHargaServis;
+            const hargaTotal = hari * participants * totalHargaServis;
 
             document.getElementById('hargaTotal').value = 'Rp ' + hargaTotal.toLocaleString('id-ID');
         }
@@ -62,8 +62,8 @@
             <input type="date" class="form-control" id="date" name="date" required>
         </div>
         <div class="form-group">
-            <label for="days">Jumlah Hari</label>
-            <input type="number" class="form-control" id="days" name="days" required oninput="calculatehargaTotal()">
+            <label for="hari">Jumlah Hari</label>
+            <input type="number" class="form-control" id="hari" name="hari" required oninput="calculatehargaTotal()">
         </div>
         <div class="form-group">
             <label for="participants">Jumlah Partisipan</label>

@@ -7,7 +7,7 @@
         $name = $_POST['name'];
         $email = $_POST['email'];
         $tanggal = $_POST['date'];
-        $hari = $_POST['days'];
+        $hari = $_POST['hari'];
         $partisipan = $_POST['participants'];
         $services = isset($_POST['services']) ? $_POST['services'] : [];
         $totalHarga = $_POST['hargaTotal'];
