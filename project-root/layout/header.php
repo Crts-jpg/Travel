@@ -17,9 +17,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="packages.php">Paket Wisata</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.php">Tentang</a>
-                </li>
             </ul>
         </div>
     </div>

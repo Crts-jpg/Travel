@@ -14,18 +14,18 @@ $booking = $_SESSION['booking'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Summary</title>
+    <title>Transaksi</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<?php include 'includes/header.php'; ?>
+<?php include 'layout/header.php'; ?>
 
 <div class="container mt-5">
     <h2>Riwayat Bookingan Tiket</h2>
     <p>Terima Kasih Telah Menggunakan Layanan Kami! Ini Detail Reservasi Paket Wisata Anda:</p>
     <ul>
-        <li>Paket: <?php echo htmlspecialchars($booking['packageName']); ?></li>
+        <li>Paket: <?php echo htmlspecialchars($booking['packageName']); ?></li> 
         <li>Nama: <?php echo htmlspecialchars($booking['name']); ?></li>
         <li>Email: <?php echo htmlspecialchars($booking['email']); ?></li>
         <li>Tanggal: <?php echo htmlspecialchars($booking['tanggal']); ?></li>
@@ -37,7 +37,7 @@ $booking = $_SESSION['booking'];
     <a href="packages.php" class="btn btn-primary">Pesan Lagi</a>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include 'layout/footer.php'; ?>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

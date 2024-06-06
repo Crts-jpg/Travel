@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel to Yogyakarta</title>
+    <title>Liburan ke Yogyakarta</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -21,7 +21,7 @@
 </head>
 <body>
 
-<?php include 'includes/header.php'; ?>
+<?php include 'layout/header.php'; ?>
 
 <div class="container">
     <!--Bagian Image Slider -->
@@ -33,21 +33,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./assets/images/boro.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/borobudurSlide.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Borobudur Temple</h5>
                     <p>Rasakan keindahan dari candi Buddha terbesar di dunia</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/images/perambanan.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/perambananSlide.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Prambanan Temple</h5>
                     <p>Jelajahi kompleks candi Hindu yang megah.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/images/merapi.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/merapiSlide.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Gunung Merapi</h5>
                     <p>Petualangan menanti di salah satu gunung berapi paling aktif di Indonesia.</p>
@@ -64,7 +64,7 @@
         </a>
     </div>
 
-    <!-- Package Cards -->
+    <!-- Paket Card -->
     <div class="row mt-4" id="paket">
         <div class="col-md-4">
             <div class="card">
@@ -109,7 +109,7 @@
     </div>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include 'layout/footer.php'; ?>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
