@@ -6,7 +6,7 @@ if (!isset($_SESSION['booking'])) {
     exit;
 }
 
-$booking = $_SESSION['booking'];
+$booking = $_SESSION['booking']; 
 ?>
 
 <!DOCTYPE html>
